@@ -1,8 +1,9 @@
 # Specify base image
-FROM alpine
+# An alpine version is as compact as possible
+FROM node:alpine
 
 # Install deps
-RUN npm Install
+RUN npm install
 
 # Default command
 CMD ["npm", "start"]
